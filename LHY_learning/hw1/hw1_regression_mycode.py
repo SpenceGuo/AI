@@ -2,7 +2,7 @@ import sys
 import pandas as pd
 import numpy as np
 
-data = pd.read_csv('data/hw1_data/train.csv', encoding='big5')
+data = pd.read_csv('../data/hw1_data/train.csv', encoding='big5')
 
 data = data.iloc[:, 3:]
 
@@ -68,7 +68,7 @@ np.save('result/weight.npy', w)
 
 # testing
 # testdata = pd.read_csv('gdrive/My Drive/hw1-regression/test.csv', header = None, encoding = 'big5')
-testdata = pd.read_csv('data/hw1_data/test.csv', header = None, encoding = 'big5')
+testdata = pd.read_csv('../data/hw1_data/test.csv', header = None, encoding ='big5')
 test_data = testdata.iloc[:, 2:]
 test_data[test_data == 'NR'] = 0
 test_data = test_data.to_numpy()
