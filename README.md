@@ -4,7 +4,7 @@
 # Machine Learning  
 
 ## kNN 算法  
-- 代码: `machineLearning/py/kNN.py`
+- 代码: [`machineLearning/py/kNN.py`](machineLearning/py/kNN.py)
 
 # Deep Learning  
 
