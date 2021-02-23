@@ -5,6 +5,10 @@ from typing import List
 
 
 def createDataset():
+    """
+    构造数据集和类别标签
+    :return: 返回数据集和类别标签
+    """
     dataSet = [
         [1, 1, 'yes'],
         [1, 1, 'yes'],
@@ -17,6 +21,11 @@ def createDataset():
 
 
 def calShannonEnt(dataSet: List):
+    """
+    计算香农熵
+    :param dataSet: 输入数据集
+    :return: 返回香农熵
+    """
     # 数据集中实例总数
     numEntries = len(dataSet)
     labelCounts = {}
@@ -33,6 +42,13 @@ def calShannonEnt(dataSet: List):
 
 
 def splitDataset(dataSet: List, axis: int, value: int):
+    """
+    划分数据集
+    :param dataSet:
+    :param axis:
+    :param value:
+    :return:
+    """
     retDataset = []
     for featVec in dataSet:
         # 将符合特征的数据抽取出来
