@@ -91,8 +91,8 @@ def majorityCnt(classList: List):
 
 
 if __name__ == '__main__':
-    myDat, labels = createDataset()
+    myDat, myLabels = createDataset()
     print(myDat)
-    print(labels)
+    print(myLabels)
     print(calShannonEnt(myDat))
     print(chooseBestFeatureToSplit(myDat))
