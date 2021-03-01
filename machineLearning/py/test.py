@@ -4,3 +4,6 @@ import torch.nn as nn
 
 print(np.zeros((3, 3), dtype=int))
 
+a = ''
+
+print(len(a))
