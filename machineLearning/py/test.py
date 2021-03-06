@@ -12,5 +12,5 @@ for i in range(10000):
         count2 += 1
     else:
         count3 += 1
-print('1-{} \n2-{} \n3-{}'.format(round(count1/10000, 3), round(count2/10000, 2),
-                                  round(count3/10000, 2)))
+print('1-{} \n2-{} \n3-{}'.format(round(count1/10000, 1), round(count2/10000, 1),
+                                  round(count3/10000, 1)))
